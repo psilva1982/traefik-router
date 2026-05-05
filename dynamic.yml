@@ -1,0 +1,10 @@
+http:
+  middlewares:
+    default-rate-limit:
+      rateLimit:
+        average: 100
+        burst: 50
+        period: 1s
+        sourceCriterion:
+          ipStrategy:
+            depth: 1
